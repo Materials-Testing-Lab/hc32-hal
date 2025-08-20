@@ -1,4 +1,5 @@
 zephyr_library()
 if(CONFIG_SOC_SERIES_HC32L19X)
+  zephyr_library_compile_definitions( -DHC32L19xKxxx )
   add_subdirectory(HC32L19x_DDL_Rev1.3.0)
 endif()

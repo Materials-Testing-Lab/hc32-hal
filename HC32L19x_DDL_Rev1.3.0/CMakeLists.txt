@@ -1,3 +1,4 @@
+zephyr_include_directories(mcu/common)
 zephyr_include_directories(driver/inc)
 zephyr_library_sources(driver/src/adc.c)
 zephyr_library_sources(driver/src/adt.c)

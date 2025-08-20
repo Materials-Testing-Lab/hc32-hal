@@ -34,7 +34,7 @@ extern "C" {
 /******************************************************************************/
 #define HWWD_DISABLE        (1)
 
-#define HC32L19xPxxx           //100PIN
+//#define HC32L19xPxxx           //100PIN
 //#define HC32L19xMxxx           //80PIN
 //#define HC32L19xKxxx           //64PIN
 //#define HC32L19xJxxx           //48PIN
