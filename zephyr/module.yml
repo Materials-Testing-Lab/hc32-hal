@@ -1,4 +1,4 @@
-name: hc32-hal
+name: hal_hc32
 build:
   cmake: .
   kconfig: Kconfig
