@@ -1,7 +1,0 @@
-/ {
-	soc {
-		pinctrl: pin-controller {
-			/omit-if-no-ref/ {
-			}
-		};
-	}

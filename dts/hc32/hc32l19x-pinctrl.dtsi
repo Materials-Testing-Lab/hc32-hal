@@ -1,0 +1,55 @@
+#include <hc32/hc32l19x-pinctrl.h>
+
+/ {
+	soc {
+		pinctrl: pin-controller@40020C00 {
+			/omit-if-no-ref/ uart1_tx_pa2: uart1_tx_pa2 {
+				pinmux = <PA02_UART1_TXD>;
+			};
+
+			/omit-if-no-ref/ uart1_rx_pa3: uart1_rx_pa3 {
+				pinmux = <PA03_UART1_RXD>;
+			};
+
+			/omit-if-no-ref/ uart0_tx_pa9: uart0_tx_pa9 {
+				pinmux = <PA09_UART0_TXD>;
+			};
+
+			/omit-if-no-ref/ uart0_rx_pa10: uart0_rx_pa10 {
+				pinmux = <PA10_UART0_RXD>;
+			};
+
+			/omit-if-no-ref/ lpuart0_tx_pc4: lpuart0_tx_pc4 {
+				pinmux = <PC04_LPUART0_TXD>;
+			};
+
+			/omit-if-no-ref/ lpuart0_rx_pc5: lpuart0_rx_pc5 {
+				pinmux = <PC05_LPUART0_RXD>;
+			};
+
+			/omit-if-no-ref/ i2c0_scl_pb6: i2c0_scl_pb6 {
+				pinmux = <PB06_I2C0_SCL>;
+				bias-pull-up;
+				drive-open-drain;
+			};
+
+			/omit-if-no-ref/ i2c0_sda_pb7: i2c0_sda_pb7 {
+				pinmux = <PB07_I2C0_SDA>;
+				bias-pull-up;
+				drive-open-drain;
+			};
+
+			/omit-if-no-ref/ i2c1_scl_pa11: i2c1_scl_pa11 {
+				pinmux = <PA11_I2C1_SCL>;
+				bias-pull-up;
+				drive-open-drain;
+			};
+
+			/omit-if-no-ref/ i2c1_sda_pa12: i2c1_sda_pa12 {
+				pinmux = <PA12_I2C1_SDA>;
+				bias-pull-up;
+				drive-open-drain;
+			};
+		};
+	};
+};
