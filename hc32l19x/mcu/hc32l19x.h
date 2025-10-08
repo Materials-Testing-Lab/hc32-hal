@@ -24,63 +24,7 @@
 extern "C" {
 #endif
 
-/******************************************************************************
-* Configuration of the Cortex-M0P Processor and Core Peripherals
-******************************************************************************/
-#define __VTOR_PRESENT          1
-#define __MPU_PRESENT           0 /* No MPU                                       */
-#define __NVIC_PRIO_BITS        2 /* M0P uses 2 Bits for the Priority Levels      */
-#define __Vendor_SysTickConfig  0 /* Set to 1 if different SysTick Config is used */
-
-/******************************************************************************
-* Interrupt Number Definition
-******************************************************************************/
-typedef enum IRQn
-{
-    NMI_IRQn            = -14, /*  2 Non Maskable                            */
-    HardFault_IRQn      = -13, /*  3 Hard Fault                              */
-    SVC_IRQn            = -5,  /* 11 SV Call                                 */
-    PendSV_IRQn         = -2,  /* 14 Pend SV                                 */
-    SysTick_IRQn        = -1,  /* 15 System Tick                             */
-    
-    PORTA_IRQn          = 0 ,
-    PORTB_IRQn          = 1 ,
-    PORTC_E_IRQn        = 2 ,
-    PORTD_F_IRQn        = 3 ,
-    DMAC_IRQn           = 4 ,
-    TIM3_IRQn           = 5 ,
-    UART0_2_IRQn        = 6 ,
-    UART1_3_IRQn        = 7 ,
-    LPUART0_IRQn        = 8 ,
-    LPUART1_IRQn        = 9 ,
-    SPI0_IRQn           = 10,
-    SPI1_IRQn           = 11,
-    I2C0_IRQn           = 12,
-    I2C1_IRQn           = 13,
-    TIM0_IRQn           = 14,
-    TIM1_IRQn           = 15,
-    TIM2_IRQn           = 16,
-    LPTIM_0_1_IRQn      = 17,
-    ADTIM4_IRQn         = 18,
-    ADTIM5_IRQn         = 19,
-    ADTIM6_IRQn         = 20,
-    PCA_IRQn            = 21,
-    WDT_IRQn            = 22,
-    RTC_IRQn            = 23,
-    ADC_DAC_IRQn        = 24,
-    PCNT_IRQn           = 25,
-    VC0_IRQn            = 26,
-    VC1_2_IRQn          = 27,
-    LVD_IRQn            = 28,
-    LCD_IRQn            = 29,
-    FLASH_RAM_IRQn      = 30,
-    CLKTRIM_IRQn        = 31,
-    
-    
-} IRQn_Type;
-
-
-#include <core_cm0plus.h>
+#include <cmsis_core_m_defaults.h>
 #include <stdint.h>
 
 #define SUCCESS         (0)
