@@ -143,8 +143,8 @@ static void _InitHidePin(void)
 ******************************************************************************/
 void SystemInit(void)
 {
-    M0P_SYSCTRL->RCL_CR_f.TRIM = (*((volatile uint16_t*) (0x00100C22ul)));
-    M0P_SYSCTRL->RCH_CR_f.TRIM = (*((volatile uint16_t*) (0x00100C08ul)));
+    Sysctrl_SetRCHTrim(SysctrlRchFreq4MHz);
+    Sysctrl_SetRCLTrim(SysctrlRclFreq32768);
     SystemCoreClockUpdate();
     _InitHidePin();
 }
