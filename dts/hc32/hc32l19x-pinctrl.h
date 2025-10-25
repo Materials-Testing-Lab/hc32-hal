@@ -33,6 +33,9 @@
 #define GpioAf5  5
 #define GpioAf6  6
 #define GpioAf7  7
+#define GpioAfa  8
+
+#define PINMUX(port, pin, af) ((port) << 16 | (pin) << 8 | (af))
 
 #define PA00_UART1_CTS    (GpioPortA<<16|GpioPin0 <<8|GpioAf1)
 #define PA01_UART1_RTS    (GpioPortA<<16|GpioPin1 <<8|GpioAf1)
