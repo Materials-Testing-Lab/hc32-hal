@@ -2,7 +2,7 @@
 #include <hc32/hc32l19x-pinctrl.h>
 / {
 	soc {
-		pinctrl: pin-controller@40020C00 {
+		pinctrl: pin-controller@40020c00 {
 			/omit-if-no-ref/ uart1_cts_pa0: uart1_cts_pa0 {
 				pinmux = <PA00_UART1_CTS>;
 			};
@@ -14,6 +14,7 @@
 			};
 			/omit-if-no-ref/ uart1_rxd_pa3: uart1_rxd_pa3 {
 				pinmux = <PA03_UART1_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ spi0_cs_pa4: spi0_cs_pa4 {
 				pinmux = <PA04_SPI0_CS>;
@@ -39,6 +40,7 @@
 			};
 			/omit-if-no-ref/ uart0_rxd_pa10: uart0_rxd_pa10 {
 				pinmux = <PA10_UART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart0_cts_pa11: uart0_cts_pa11 {
 				pinmux = <PA11_UART0_CTS>;
@@ -142,6 +144,7 @@
 			};
 			/omit-if-no-ref/ lpuart0_rxd_pc5: lpuart0_rxd_pc5 {
 				pinmux = <PC05_LPUART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ pca_ch0_pc6: pca_ch0_pc6 {
 				pinmux = <PC06_PCA_CH0>;
@@ -160,6 +163,7 @@
 			};
 			/omit-if-no-ref/ lpuart1_rxd_pc11: lpuart1_rxd_pc11 {
 				pinmux = <PC11_LPUART1_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ lpuart0_txd_pc12: lpuart0_txd_pc12 {
 				pinmux = <PC12_LPUART0_TXD>;
@@ -178,6 +182,7 @@
 			};
 			/omit-if-no-ref/ uart1_rxd_pd6: uart1_rxd_pd6 {
 				pinmux = <PD06_UART1_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart1_txd_pd7: uart1_txd_pd7 {
 				pinmux = <PD07_UART1_TXD>;
@@ -187,6 +192,7 @@
 			};
 			/omit-if-no-ref/ lpuart0_rxd_pd9: lpuart0_rxd_pd9 {
 				pinmux = <PD09_LPUART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ lpuart0_txd_pd10: lpuart0_txd_pd10 {
 				pinmux = <PD10_LPUART0_TXD>;
@@ -199,6 +205,7 @@
 			};
 			/omit-if-no-ref/ uart2_rxd_pd13: uart2_rxd_pd13 {
 				pinmux = <PD13_UART2_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart2_txd_pd14: uart2_txd_pd14 {
 				pinmux = <PD14_UART2_TXD>;
@@ -282,6 +289,7 @@
 			};
 			/omit-if-no-ref/ lpuart1_rxd_pa1: lpuart1_rxd_pa1 {
 				pinmux = <PA01_LPUART1_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ tim0_cha_pa2: tim0_cha_pa2 {
 				pinmux = <PA02_TIM0_CHA>;
@@ -318,12 +326,14 @@
 			};
 			/omit-if-no-ref/ uart0_rxd_pa13: uart0_rxd_pa13 {
 				pinmux = <PA13_UART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart0_txd_pa14: uart0_txd_pa14 {
 				pinmux = <PA14_UART0_TXD>;
 			};
 			/omit-if-no-ref/ uart1_rxd_pa15: uart1_rxd_pa15 {
 				pinmux = <PA15_UART1_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ tim3_ch1b_pb0: tim3_ch1b_pb0 {
 				pinmux = <PB00_TIM3_CH1B>;
@@ -345,6 +355,7 @@
 			};
 			/omit-if-no-ref/ uart0_rxd_pb7: uart0_rxd_pb7 {
 				pinmux = <PB07_UART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ tim1_cha_pb8: tim1_cha_pb8 {
 				pinmux = <PB08_TIM1_CHA>;
@@ -410,6 +421,7 @@
 			};
 			/omit-if-no-ref/ lpuart0_rxd_pc11: lpuart0_rxd_pc11 {
 				pinmux = <PC11_LPUART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ lpuart1_txd_pc12: lpuart1_txd_pc12 {
 				pinmux = <PC12_LPUART1_TXD>;
@@ -567,6 +579,7 @@
 			};
 			/omit-if-no-ref/ lpuart0_rxd_pb11: lpuart0_rxd_pb11 {
 				pinmux = <PB11_LPUART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ lpuart0_txd_pb12: lpuart0_txd_pb12 {
 				pinmux = <PB12_LPUART0_TXD>;
@@ -639,6 +652,7 @@
 			};
 			/omit-if-no-ref/ uart3_rxd_pe14: uart3_rxd_pe14 {
 				pinmux = <PE14_UART3_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart3_txd_pe15: uart3_txd_pe15 {
 				pinmux = <PE15_UART3_TXD>;
@@ -648,6 +662,7 @@
 			};
 			/omit-if-no-ref/ uart1_rxd_pf1: uart1_rxd_pf1 {
 				pinmux = <PF01_UART1_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart0_cts_pf6: uart0_cts_pf6 {
 				pinmux = <PF06_UART0_CTS>;
@@ -754,6 +769,7 @@
 			};
 			/omit-if-no-ref/ uart2_rxd_pc2: uart2_rxd_pc2 {
 				pinmux = <PC02_UART2_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ pcnt_s1fo_pc3: pcnt_s1fo_pc3 {
 				pinmux = <PC03_PCNT_S1FO>;
@@ -967,6 +983,7 @@
 			};
 			/omit-if-no-ref/ uart3_rxd_pc6: uart3_rxd_pc6 {
 				pinmux = <PC06_UART3_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart3_txd_pc7: uart3_txd_pc7 {
 				pinmux = <PC07_UART3_TXD>;
@@ -1053,6 +1070,7 @@
 			};
 			/omit-if-no-ref/ uart0_rxd_pb9: uart0_rxd_pb9 {
 				pinmux = <PB09_UART0_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ uart1_rts_pb10: uart1_rts_pb10 {
 				pinmux = <PB10_UART1_RTS>;
@@ -1071,6 +1089,7 @@
 			};
 			/omit-if-no-ref/ lpuart1_rxd_pb15: lpuart1_rxd_pb15 {
 				pinmux = <PB15_LPUART1_RXD>;
+				input-enable;
 			};
 			/omit-if-no-ref/ analog_pa0: analog_pa0 {
 				pinmux = <PINMUX(GpioPortA, GpioPin0, GpioAfa)>;
