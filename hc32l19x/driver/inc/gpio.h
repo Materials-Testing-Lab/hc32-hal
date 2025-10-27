@@ -97,6 +97,7 @@ typedef enum en_gpio_af
     GpioAf5  = 5u,      ///< GPIO AF5:复用功能5
     GpioAf6  = 6u,      ///< GPIO AF6:复用功能6
     GpioAf7  = 7u,      ///< GPIO AF7:复用功能7
+    GpioAfa  = 8u,      ///< GPIO AFA: Analog
 }en_gpio_af_t;
 
 ///*||======||=============||=============||=============||=============||=============||=============||=============||*///
